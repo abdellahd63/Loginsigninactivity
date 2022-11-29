@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane
+        maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.pharmacom.LoginpageController" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="308.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="104.0" layoutY="60.0" prefHeight="51.0" prefWidth="100.0" text="Login" textFill="#00a6f5">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="150.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="216.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="62.0" layoutY="175.0" prefHeight="25.0" prefWidth="193.0" />
+            <PasswordField fx:id="password" layoutX="62.0" layoutY="241.0" prefHeight="25.0" prefWidth="194.0" />
+            <Button layoutX="124.0" layoutY="282.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="60.0" text="Login" fx:id="loginbtn">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="96.0" layoutY="359.0" text="Create a new account" fx:id="signinbtn">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="394.0" style="-fx-background-color: #00A6F5;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="253.0" layoutX="37.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="PHARMANAG2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
