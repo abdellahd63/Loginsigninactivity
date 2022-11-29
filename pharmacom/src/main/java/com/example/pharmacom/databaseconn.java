@@ -8,7 +8,7 @@ public class databaseconn {
         String databasename="pharmacomdb";
         String databaseuser="cryptocode";
         String databasepassword="cryptocode";
-        String url="jbdc:mysql//localhost/"+databasename;
+        String url="jdbc:mysql://127.0.0.1:3306/?user="+databasename;
         try{
             Class.forName("com.mysql.cj.jbdc.Driver");
             databaselink=DriverManager.getConnection(url,databaseuser,databasepassword);
